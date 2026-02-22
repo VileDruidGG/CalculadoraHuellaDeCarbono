@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="40dp">
+
+
+    <TextView
+            android:id="@+id/tvCalcTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de huella de carbono"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"/>
+
+        <!-- 1) Familiar -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Entorno familiar (kWh/mes)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etFamilyKwh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej. 250"
+            android:inputType="number" />
+
+        <!-- 2) Transporte -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Transporte (km/semana)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTransportKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej. 120"
+            android:inputType="number" />
+
+        <!-- 3) Estilo de vida -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Estilo de vida (puntos/mes)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etLifestylePoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej. 50"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Calcular" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Resultado: -"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
