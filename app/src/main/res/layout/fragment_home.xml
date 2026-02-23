@@ -103,13 +103,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <!-- CTA -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnGoToCalculator"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:text="Ir a la calculadora"
-            app:cornerRadius="14dp" />
+
 
         <TextView
             android:layout_width="match_parent"
